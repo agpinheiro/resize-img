@@ -1,33 +1,34 @@
 ## 📃 Sobre
-Minificador de imagens em Javascript.
-
-No trabalho, eu tive a necessidade de compactar uma grande quantidade de fotos. Em vez de usar um serviço online e fazer a rotina cerca de 200x, preferi construir esse script que realiza a compressão de forma automática. 
+Redimensionar imagens em Javascript.
 
 ## 🔨 Instalação
 Antes de rodar o script, coloque as imagens a serem comprimidas na pasta origin.
 
+## ⚙️ Configuração
+No arquivo `config.js`, você precisará configurar algumas coisas:
+
+resize - Para definir a quantidade de vezes que será diminuida altura e largura.
+quality - Para definir a qualidade de saída da imagem.
+
+
 ```bash
 # Baixe o projeto
-$ git clone https://github.com/rbmelolima/MinifyIMG.git
+$ git clone https://github.com/agpinheiro/resize-img.git
 
 # Entre no projeto
-$ cd MinifyIMG
+$ cd resize-img
 
 # Instale as dependências 
 $ npm install
 
 # Com as imagens na pasta origin, execute
-$ npm run minify
+$ npm run start
 
 # Veja as imagens comprimidas na pasta destiny
 
-# Para apagar todas as imagens de origem e destino
-$ nom run clean
 
 ```
 
 ## 🎯 Features
 - [X] Minificar JPG, reduzindo a qualidade da imagem para 80%
 - [X] Minificar PNG, reduzindo a qualidade da imagem para 80%
-- [X] Excluindo imagens de destino e origem
-

@@ -1,16 +1,16 @@
 {
-  "name": "minifyimg",
+  "name": "resize",
   "version": "1.0.0",
   "description": "",
-  "main": "index.mjs",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "clean": "node clean.mjs",
-    "minify": "node index.mjs"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "sharp": "^0.30.4"
+    "image-size": "^1.0.2",
+    "sharp": "^0.32.6"
   }
 }
