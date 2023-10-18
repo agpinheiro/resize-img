@@ -1,4 +1,6 @@
-export const options = {
-    resize: 10, // Quantidade de vezes que vai reduzir altura e largura
-    quality: 80, // Qualidade de saida da imagem
-  };
+const config = {
+  resize: 10, 
+  quality: 80,
+};
+
+export default config;

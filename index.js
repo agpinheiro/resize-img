@@ -17,7 +17,7 @@ function readDirectory(path) {
 async function execute() {
     try {
         const allFiles = await readDirectory(path.resolve("images/origin"));
-        allFiles.foreach(async (file) => {
+        allFiles.forEach(async (file) => {
             await convertImage(file)
         })
 

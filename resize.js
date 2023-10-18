@@ -1,7 +1,7 @@
 import sharp from "sharp";
 import sizeOf from "image-size";
 import path from "path";
-import { options } from "./config";
+import config from "./config.js";
 
 export async function convertImage(urlImage) {
   const url = path.resolve(`images/origin/${urlImage}`);
@@ -9,10 +9,10 @@ export async function convertImage(urlImage) {
   const dimensions = sizeOf(url);
 
   
-  const newWidth = Math.round(dimensions.width / options.resize);
-  const newHeight = Math.round(dimensions.height / options.resize);
+  const newWidth = Math.round(dimensions.width / config.resize);
+  const newHeight = Math.round(dimensions.height / config.resize);
   sharp(url)
-    .jpeg({ quality: options.quality })
+    .jpeg({ quality: config.quality })
     .resize(newWidth, newHeight)
     .toFile(newPath, (err, info) => {
       if (err) {
