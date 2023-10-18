@@ -1,6 +1,7 @@
 const config = {
-  resize: 10, 
-  quality: 80,
+  resize: 2, 
+  quality: 100,
+  square: true,
 };
 
 export default config;
