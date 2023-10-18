@@ -7,8 +7,11 @@ Antes de rodar o script, coloque as imagens a serem comprimidas na pasta origin.
 ## ⚙️ Configuração
 No arquivo `config.js`, você precisará configurar algumas coisas:
 
-resize - Para definir a quantidade de vezes que será diminuida altura e largura.
-quality - Para definir a qualidade de saída da imagem.
+Resize - Para definir a quantidade de vezes que será diminuida altura e largura.
+
+Quality - Para definir a qualidade de saída da imagem.
+
+Square - Verdadeiro ou falso para deixar a imagem quadrada.
 
 
 ```bash
