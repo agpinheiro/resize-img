@@ -13,8 +13,6 @@ export async function convertImage(urlImage) {
   const newHeight = Math.round(dimensions.height / config.resize);
 
   const resize = config.square ? {w: newWidth, h:newWidth} : {w: newWidth, h:newHeight}
-
-  console.log(resize.w, resize.h)
   sharp(url)
     .jpeg({ quality: config.quality })
     .resize(resize.w, resize.h)
